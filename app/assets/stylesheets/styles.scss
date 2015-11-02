@@ -284,8 +284,8 @@ body {
 /* ==========================================================================
    Content
 ========================================================================== */
-.content__cars {
-  margin-top: 5rem;
+.content__cars, .content__car {
+  margin-top: 2rem;
 }
 
 .content__image {
@@ -335,6 +335,7 @@ $btn-text-color: $grey200;
 
 .btn {
   border: 0;
+  border-radius: 0;
   outline: 0;
   background: $btn-background-color;
   color: $btn-text-color;
@@ -344,10 +345,75 @@ $btn-text-color: $grey200;
   transition: all 0.3s;
   &:hover {
     background: $btn-background-hover-color;
+    color: $white;
   }
-  & > a {
-    display: block; /* quick fix for button size */
+}
+
+.btn,
+.button_to {
+  display: block;
+  width: 100%;
+  &.btn-sm {
+    width: 31.7%;
   }
+}
+
+
+  
+.add__content {
+  label {
+    display: block;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    text-align: left;
+  }
+  & input[type="text"] {
+    border: 2px solid $grey600;
+    background: transparent;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  & input:focus,
+    textarea:focus {
+    outline: $red500 solid thin;
+  }
+  
+  & textarea {
+    resize: vertical;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid $grey600;
+    background: transparent;
+    color: $grey900;
+    height: 120px;
+    transition: all 0.5s;
+  }
+  
+  & input[type="submit"] {
+    background: $red500;
+    border: none;
+    outline: none;
+    color: $grey50;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 0 auto;
+    transition: all .5s ease-in-out;
+  }
+  & input[type="submit"]:hover {
+    opacity: 0.7;
+  }
+}
+
+.error-msg {
+  background: $red500;
+  color: $grey50;
+  padding: 1rem;
+  transition: all 0.7s;
 }
 
 
@@ -380,5 +446,12 @@ $btn-text-color: $grey200;
 /* Content */
   .content__cars, .content__car {
     margin-top: 2rem;
+  }
+
+/* btn */
+  .btn {
+    &.btn-sm {
+      width: 100%;
+    }
   }
 }

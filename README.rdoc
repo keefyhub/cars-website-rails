@@ -1,28 +1,24 @@
-== README
+# Cars Website - Rails Skills Test
+Git Repo of rails skills test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**make sure ruby and rails are installed**
 
-Things you may want to cover:
+##Set Up
+download assests into local folder
 
-* Ruby version
+##Type
+```
+bundle install
+```
 
-* System dependencies
+##Test its working
+```
+rails s
+```
+(http://localhost:3000/)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+##If there are any errors, cd to parent directory, then type
+```
+rails new cars-website-rails
+```
+and press NO (n), to overwrite any changes, this should install everything that might be missing, while leaving the app intact.
