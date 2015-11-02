@@ -1,0 +1,37 @@
+  <section class="wrapper container">
+
+    <section class="breadcrumbs">
+      Blog / All Posts
+    </section>
+
+    <h2 class="content__title">Example Title</h2>
+    <h3 class="content__sub-title">Example of a subheading</h3>
+
+    <section class="content__cars">
+      <div class="row"> 
+      <% @articles.shuffle.each do |article| %>
+        <div class="col-md-4 content__car">
+          <div class="content__image">
+            <%= image_tag article.image %>
+            <div class="content__info">
+              <div class="content_comments">
+                <i class="fa fa-commenting"></i>
+              </div>
+              <div class="content__download">
+                <i class="fa fa-cloud-download"></i>
+              </div>
+              <div class="content_email">
+                <i class="fa fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+          <h3><%= article.title %></h3>
+          <p><%= article.text %> <%= link_to 'Car news', "/", class: "content__newslink" %>
+          </p>
+
+        </div>
+      <% end %>
+
+      </div>
+    </section>
+  </section>
