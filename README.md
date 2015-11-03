@@ -21,4 +21,4 @@ rails s
 ```
 rails new cars-website-rails
 ```
-and press NO (n), to overwrite any changes, this should install everything that might be missing, while leaving the app intact.
+and select NO (n), to any prompts, this should install everything that might be missing, while leaving the app intact.
