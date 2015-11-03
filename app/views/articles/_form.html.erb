@@ -15,7 +15,7 @@
   <% end %>
  
   <div class="row add__content">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <%= f.label :title %><br>
       <%= f.text_field :title %>
       <%= f.label :image %><br>
@@ -24,6 +24,7 @@
       <%= f.text_area :text %>
 
       <%= f.submit :class => "btn" %>
+      <%= link_to 'Back', articles_path, class: "btn" %>
     </div>
   </div>
  

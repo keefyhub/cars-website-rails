@@ -386,7 +386,6 @@ $btn-text-color: $grey200;
     width: 100%;
     border: 2px solid $grey600;
     background: transparent;
-    color: $grey900;
     height: 120px;
     transition: all 0.5s;
   }
@@ -415,6 +414,22 @@ $btn-text-color: $grey200;
   padding: 1rem;
   transition: all 0.7s;
 }
+
+
+
+
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+  text-align: center;
+  background: #ccc;
+  color: #000;
+  padding: 10px 0 10px 0;
+}
+
 
 
 
